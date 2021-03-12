@@ -1,2 +1,2 @@
 # Delphi7-POST-HTTP
- Simples integracao para POST HPPT de delphi7 para api do himarket
+Exemplo simples de requisição POST HTTP em sistemas delphi7 para comunicação com a API do painel.himarket

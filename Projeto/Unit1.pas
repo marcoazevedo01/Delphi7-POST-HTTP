@@ -43,13 +43,13 @@ begin
         IdHTTP1.Request.UserAgent:='Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36';
         IdHTTP1.Request.Accept := 'application/json, text/javascript, */*; q=0.01';
         IdHTTP1.Request.ContentType := 'application/x-www-form-urlencoded; charset=UTF-8';
-        Resp_Json:=IdHTTP1.Post('http://localhost:3000/integration/api', Req_Json);
+        Resp_Json:=IdHTTP1.Post('http://painel.himarket.com.br/integration/api', Req_Json);
     finally
         Req_Json.Free;
     end;
            //continua o seu fluxo normal independete.
            //DMconecao.tabela.post;
-           //se quiser verificar o sevrer devolve um json com {msg:'success'} ou error  de qualqer maneira para n parar o fluxo principal o status da reposta sera 202
+           //se quiser verificar o server devolve um json com {msg:'success'} ou error  de qualqer maneira para n parar o fluxo principal o status da reposta sera 202
 end;
 
 end.
